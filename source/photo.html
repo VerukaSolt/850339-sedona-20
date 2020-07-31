@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="page-header">
+      <a href="index.html" class="page-header__logo">
+        <img src="img/logo-sedona-mobile.svg"  alt="Седона">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html">
+                Фото и видео
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">
+                Форма отзыва
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  <main class="page-main">
+    <section class="welcome">
+    <img src="img/text-sedona.svg">
+    </section>
+      <section class="photo-and-video">
+        <img src="img/sedona.png"  alt="Sedona">
+        <h1>ФОТО И ВИДЕО</h1>
+        <p>не можете решиться на путешествие из-за курса? Фотографии помгут вам забыть о политике и экономике</p>
+      </section>
+    <section class="photo-list">
+        <div class="photo-item">
+          <img src="img/photo-sunset-mobile@1x.jpg" alt="фотография дороги">
+          <p class="photo-title">Неродные просторы</p>
+          <p class="author">Автор фото: Борис</p>
+          <div class="statistic">
+          <div class="appereciate-button">
+            <span class="like-icon"></span>
+          </div>
+          <div class="counter"></div>
+        </div>
+        </div>
+        <div class="photo-item">
+          <img src="img/photo-cactus-mobile@1x.jpg" alt="растительность Седоны">
+          <p class="photo-title">Местная растительность</p>
+          <p class="author">Автор фото: Сергей</p>
+          <div class="statistic">
+            <div class="appereciate-button">
+              <span class="like-icon"></span>
+            </div>
+            <div class="counter"></div>
+          </div>
+        </div>
+        <div class="photo-item">
+          <img src="img/photo-roads-mobile@1x.jpg"  alt="Дорога на Север">
+          <p class="photo-title">Дорога на север</p>
+          <p class="author">Автор фото: Петр</p>
+          <div class="statistic">
+            <div class="appereciate-button">
+              <span class="like-icon"></span>
+            </div>
+            <div class="counter"></div>
+          </div>
+        </div>
+        <div class="photo-item">
+          <img src="img/photo-bridge-mobile@1x.jpg"  alt="Мост дъявола">
+          <p class="photo-title">Мост дъявола</p>
+          <p class="author">Автор фото: Антон</p>
+          <div class="statistic">
+            <div class="appereciate-button">
+              <span class="like-icon"></span>
+            </div>
+            <div class="counter"></div>
+          </div>
+        </div>
+      </section>
+      <section class="video-presentation">
+        <h2>все еще сомневаетесь?</h2>
+        <p>смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <video width="400" height="300" controls="controls" poster="video/duel.jpg">
+          <source src="video/duel.ogv" type='video/ogg; codecs="theora, vorbis"'>
+            <source src="video/duel.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+              <source src="video/duel.webm" type='video/webm; codecs="vp8, vorbis"'>
+                Тег video не поддерживается вашим браузером.
+                <a href="video/duel.mp4">Скачайте видео</a>.
+              </video>
+      </section>
+      <footer class="page-footer">
+        <div class="page-footer__contacts contacts">
+          <div class="contact">
+            <a href="#">#visit Sedona</a>
+            <a href="tel:+74956660266" alt="номер телефона">Тел: +7(495) 666-02-66</a>
+          </div>
+        </div>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="twitter" href="https://twitter.com/" alt="Твитер"></a>
+            </li>
+            <li class="social__item">
+              <a class="facebook" href="https://www.facebook.com/" alt="Фейсбук"></a>
+            </li>
+            <li class="social__item">
+              <a class="youtube" href="https://www.youtube.com/" alt="Ютюб"></a>
+            </li>
+          </ul>
+          <div class="page-footer__copyright copyright">
+          <p class="copyright__text">Разработано</p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+          </div>
+        </div>
+      </footer>
+  </body>
+</html>
