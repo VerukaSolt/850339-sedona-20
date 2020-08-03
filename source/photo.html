@@ -17,22 +17,22 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
+            <li class="nav-list__item nav-list__item--active">
               <a href="index.html">
                 Главная
               </a>
             </li>
-            <li class="site-list__item">
+            <li class="nav-list__item">
               <a href="photo.html">
                 Фото и видео
               </a>
             </li>
-            <li class="site-list__item">
+            <li class="nav-list__item">
               <a href="form.html">
                 Форма отзыва
               </a>
             </li>
-            <li class="site-list__item">
+            <li class="nav-list__item">
               <a href="#">
                 HTML Academy
               </a>
@@ -43,69 +43,61 @@
     </header>
   <main class="page-main">
     <section class="welcome">
-    <img src="img/text-sedona.svg">
+      <img src="img/text-sedona.svg">
     </section>
-      <section class="photo-and-video">
+    <section class="photo-and-video">
         <img src="img/sedona.png"  alt="Sedona">
-        <h1>ФОТО И ВИДЕО</h1>
-        <p>не можете решиться на путешествие из-за курса? Фотографии помгут вам забыть о политике и экономике</p>
-      </section>
+        <h1>Фото и видео</h1>
+        <p>Не можете решиться на путешествие из-за курса? Фотографии помгут вам забыть о политике и экономике</p>
+    </section>
     <section class="photo-list">
-        <div class="photo-item">
-          <img src="img/photo-sunset-mobile@1x.jpg" alt="фотография дороги">
-          <p class="photo-title">Неродные просторы</p>
-          <p class="author">Автор фото: Борис</p>
-          <div class="statistic">
-          <div class="appereciate-button">
-            <span class="like-icon"></span>
-          </div>
-          <div class="counter"></div>
+      <div class="photo">
+        <img src="img/photo-sunset-mobile@1x.jpg" alt="фотография дороги">
+        <p class="photo__title">Неродные просторы</p>
+        <p class="photo__author">Автор фото: Борис</p>
+        <div class="photo__statistic">
+          <button class="photo__appereciate_button">1350
+          </button>
         </div>
+      </div>
+      <div class="photo">
+        <img src="img/photo-cactus-mobile@1x.jpg" alt="растительность Седоны">
+        <p class="photo__title">Местная растительность</p>
+        <p class="photo__author">Автор фото: Сергей</p>
+        <div class="photo__statistic">
+          <button class="photo__appereciate_button">143
+          </button>
         </div>
-        <div class="photo-item">
-          <img src="img/photo-cactus-mobile@1x.jpg" alt="растительность Седоны">
-          <p class="photo-title">Местная растительность</p>
-          <p class="author">Автор фото: Сергей</p>
-          <div class="statistic">
-            <div class="appereciate-button">
-              <span class="like-icon"></span>
-            </div>
-            <div class="counter"></div>
-          </div>
+      </div>
+      <div class="photo">
+        <img src="img/photo-roads-mobile@1x.jpg"  alt="Дорога на Север">
+        <p class="photo__title">Дорога на север</p>
+        <p class="photo__author">Автор фото: Петр</p>
+        <div class="photo__statistic">
+          <button class="photo__appereciate_button">96
+          </button>
         </div>
-        <div class="photo-item">
-          <img src="img/photo-roads-mobile@1x.jpg"  alt="Дорога на Север">
-          <p class="photo-title">Дорога на север</p>
-          <p class="author">Автор фото: Петр</p>
-          <div class="statistic">
-            <div class="appereciate-button">
-              <span class="like-icon"></span>
-            </div>
-            <div class="counter"></div>
-          </div>
+      </div>
+      <div class="photo">
+        <img src="img/photo-bridge-mobile@1x.jpg"  alt="Мост дъявола">
+        <p class="photo__title">Мост дъявола</p>
+        <p class="photo__author">Автор фото: Антон</p>
+        <div class="photo__statistic">
+          <button class="photo__appereciate_button">254
+          </button>
         </div>
-        <div class="photo-item">
-          <img src="img/photo-bridge-mobile@1x.jpg"  alt="Мост дъявола">
-          <p class="photo-title">Мост дъявола</p>
-          <p class="author">Автор фото: Антон</p>
-          <div class="statistic">
-            <div class="appereciate-button">
-              <span class="like-icon"></span>
-            </div>
-            <div class="counter"></div>
-          </div>
-        </div>
-      </section>
-      <section class="video-presentation">
-        <h2>все еще сомневаетесь?</h2>
-        <p>смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        <video width="400" height="300" controls="controls" poster="video/duel.jpg">
-          <source src="video/duel.ogv" type='video/ogg; codecs="theora, vorbis"'>
-            <source src="video/duel.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-              <source src="video/duel.webm" type='video/webm; codecs="vp8, vorbis"'>
-                Тег video не поддерживается вашим браузером.
-                <a href="video/duel.mp4">Скачайте видео</a>.
-              </video>
+      </div>
+    </section>
+    <section class="video-presentation">
+      <h2>Все еще сомневаетесь?</h2>
+      <p>Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+      <video width="400" height="300" controls="controls" poster="video/duel.jpg">
+        <source src="video/duel.ogv" type='video/ogg; codecs="theora, vorbis"'>
+          <source src="video/duel.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+            <source src="video/duel.webm" type='video/webm; codecs="vp8, vorbis"'>
+              Тег video не поддерживается вашим браузером.
+              <a href="video/duel.mp4">Скачайте видео</a>.
+      </video>
       </section>
       <footer class="page-footer">
         <div class="page-footer__contacts contacts">
@@ -116,14 +108,14 @@
         </div>
         <div class="page-footer__social social">
           <ul class="social__list">
-            <li class="social__item">
-              <a class="twitter" href="https://twitter.com/" alt="Твитер"></a>
+            <li class="social__link">
+              <a class="social__link--twitter" href="https://twitter.com/" alt="Твитер"></a>
             </li>
-            <li class="social__item">
-              <a class="facebook" href="https://www.facebook.com/" alt="Фейсбук"></a>
+            <li class="social__link">
+              <a class="social__link--facebook" href="https://www.facebook.com/" alt="Фейсбук"></a>
             </li>
-            <li class="social__item">
-              <a class="youtube" href="https://www.youtube.com/" alt="Ютюб"></a>
+            <li class="social__link">
+              <a class="social__link--youtube" href="https://www.youtube.com/" alt="Ютюб"></a>
             </li>
           </ul>
           <div class="page-footer__copyright copyright">
