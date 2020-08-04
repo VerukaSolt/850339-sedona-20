@@ -1,19 +1,18 @@
 .nav-list__item {
   background-color: @block-color;
   font-size: 18px;
-  font-weight: bold;
-    &:hover {
-      background-color: @hover-color;
-    }
-    &:active {
-      mix-blend-mode: normal;
-      text-decoration-color: 0.3;
-      background-color: @active-color;
+  font-weight: 700;
+}
 
-    }
-    a {
-      text-decoration: none;
-      color: #ffffff;
+a {
+  color: @base-color;
+}
 
-    }
+&:hover {
+  background-color: @hover-color;
+}
+
+&:active {
+  background-color: @active-color;
+  color: @active-text-opacity;
 }
