@@ -1,0 +1,22 @@
+.nav-list {
+  .clear-list();
+}
+
+.nav-list__item {
+  background-color: @block-color;
+  font-size: 18px;
+  font-weight: 700;
+
+  a {
+    color: @base-color;
+
+    &:hover {
+      background-color: @hover-color;
+    }
+
+    &:active {
+      background-color: @active-color;
+      color: @active-text-opacity;
+    }
+  }
+}
