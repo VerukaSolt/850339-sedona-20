@@ -1,0 +1,43 @@
+.sights-form__label {
+  display: block;
+  margin-top: 20px;
+}
+
+.sights-form__label input {
+  display: none;
+}
+
+.sights-form__label span {
+  color: @main-font-color;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+  padding-left: 74px;
+}
+
+.sights-form__label span::before {
+  width: 48px;
+  height: 48px;
+  border-radius: 10%;
+  border-style: none;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -10px;
+  background-color: @form-background;
+}
+
+.sights-form__label span::after {
+  width: 23px;
+  height: 16px;
+  background-image: url("../img/icon-tick.svg");
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 5px;
+  display: none;
+}
+
+.sights-form__label input:checked + span::after {
+  display: block;
+}

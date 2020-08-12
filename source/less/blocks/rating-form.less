@@ -1,0 +1,44 @@
+.rating-form__label {
+  display: block;
+  margin-top: 20px;
+}
+
+.rating-form__label input {
+  display: none;
+}
+
+.rating-form__label span {
+  color: @main-font-color;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+  padding-left: 74px;
+}
+
+.rating-form__label span::before {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border-style: none;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -10px;
+  background-color: @form-background;
+}
+
+.rating-form__label span::after {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #333333;
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 5px;
+  display: none;
+}
+
+.rating-form__label input:checked + span::after {
+  display: block;
+}
