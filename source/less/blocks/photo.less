@@ -7,6 +7,13 @@
   text-transform: none;
 }
 
+.photo__img {
+  @media (min-width: @mobile-width-only) {
+    width: 280px;
+    height: 280px;
+  }
+}
+
 .photo__appereciate-button {
   display: flex;
   content: "";
@@ -15,4 +22,38 @@
   min-width: 23px;
   min-height: 21px;
   border-style: none;
+  padding-bottom: 15px;
+}
+
+@media (min-width: @mobile-width-omly) {
+  .photo {
+    height: 414px;
+    padding-top: 22px;
+    border-top: 1px solid @form-hover-background;
+  }
+
+  @media (min-width: @tablet-width) {
+    border-style: none;
+  }
+}
+
+.photo__text {
+  margin-left: 20px;
+  text-align: left;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+@media (min-width: @tablet-width) {
+  .photo__statistic {
+    display: flex;
+    width: 100%;
+    min-height: 80px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photo__appereciate-button {
+    text-align: right;
+  }
 }

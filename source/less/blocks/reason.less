@@ -1,6 +1,8 @@
 .reason {
-  margin-top: 39px;
-  margin-bottom: 35px;
+  box-sizing: border-box;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
 
   &--blue {
     background-color: @active-color;
@@ -9,5 +11,61 @@
 
   &--gray {
     background-color: @reason-gray-color;
+    margin-top: -20px;
+    display: block;
+    position: relative;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 33.33%;
+  }
+}
+
+.reason__title {
+  padding-top: 34px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.reason__description {
+  padding-top: 35px;
+  max-width: 248px;
+  margin: auto;
+  padding-bottom: 41px;
+}
+
+
+@media (min-width: @tablet-width) {
+  .reason__description {
+    max-width: 189px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reason__description {
+    max-width: 315px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .reason__wrapper {
+    display: flex;
+  }
+}
+
+.reason__img {
+  width: 320px;
+}
+
+.reason--gray:nth-last-child(n+2)::after {
+  content: "";
+  width: 280px;
+  position: absolute;
+  border-bottom: 1px solid #d6d6d6;
+  top: 100%;
+  left: 20px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }

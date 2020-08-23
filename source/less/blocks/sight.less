@@ -1,0 +1,79 @@
+
+.sight {
+  display: flex;
+  position: relative;
+  text-align: center;
+
+  &::before {
+    content: "";
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 20%;
+    right: 80%;
+    transform: translate(-30%, -20%);
+  }
+
+  &--housing::before {
+    width: 75px;
+    height: 72px;
+    background-image: url("../img/icon-house.svg");
+  }
+
+  &--food::before {
+    width: 75px;
+    height: 72px;
+    background-image: url("../img/icon-burger.svg");
+  }
+
+  &--souvenir::before {
+    width: 75px;
+    height: 75px;
+    background-image: url("../img/icon-gift.svg");
+  }
+}
+
+.sight__description {
+  padding-bottom: 40px;
+}
+
+.sight__text {
+  display: block;
+  max-width: 240px;
+  text-align: left;
+  padding-left: 69px;
+}
+
+
+@media (min-width: @tablet-width) {
+  .sight {
+    display: flex;
+    position: relative;
+    width: 33.33%;
+    min-height: 330px;
+    text-align: center;
+  }
+
+  &::before {
+    top: 50%;
+    left: 50%;
+    transform: translate(10%, 10%);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .sight__text {
+    display: block;
+    max-width: 193px;
+    text-align: center;
+    padding-top: 158px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .sight__text {
+    display: block;
+    max-width: 313px;
+    text-align: center;
+    padding-top: 158px;
+  }
+}
