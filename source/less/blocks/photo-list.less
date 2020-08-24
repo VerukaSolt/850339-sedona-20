@@ -4,6 +4,10 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
     width: 648px;
+
+    &:first-of-type {
+      grid-column: ~"1/2";
+    }
   }
 
   @media (min-width: @desktop-width) {
