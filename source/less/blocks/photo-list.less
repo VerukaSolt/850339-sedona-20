@@ -1,7 +1,9 @@
 .photo-list {
   @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
     width: 648px;
-    height: 400px;
   }
 
   @media (min-width: @desktop-width) {
