@@ -1,4 +1,3 @@
-
 .sight {
   display: flex;
   position: relative;
@@ -11,6 +10,12 @@
     top: 20%;
     right: 80%;
     transform: translate(-30%, -20%);
+
+    @media (min-width: @tablet-width) {
+      top: 0%;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
   }
 
   &--housing::before {
@@ -30,7 +35,17 @@
     height: 75px;
     background-image: url("../img/icon-gift.svg");
   }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    position: relative;
+    width: 33.33%;
+    min-height: 256px;
+    text-align: center;
+    margin: 0 auto;
+  }
 }
+
 
 .sight__description {
   padding-bottom: 40px;
@@ -41,39 +56,17 @@
   max-width: 240px;
   text-align: left;
   padding-left: 69px;
-}
 
-
-@media (min-width: @tablet-width) {
-  .sight {
-    display: flex;
-    position: relative;
-    width: 33.33%;
-    min-height: 330px;
-    text-align: center;
-  }
-
-  &::before {
-    top: 50%;
-    left: 50%;
-    transform: translate(10%, 10%);
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .sight__text {
+  @media (min-width: @tablet-width) {
     display: block;
     max-width: 193px;
+    margin: 0 auto;
     text-align: center;
-    padding-top: 158px;
+    padding-left: 0;
+    padding-top: 80px;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .sight__text {
-    display: block;
+  @media (min-width: @desktop-width) {
     max-width: 313px;
-    text-align: center;
-    padding-top: 158px;
   }
 }
