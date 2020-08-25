@@ -32,6 +32,17 @@
 
   @media (min-width: @tablet-width) {
     border-top: none;
+    width: 50%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 33.33%;
+  }
+}
+
+.photo--sunset {
+  @media (min-width: @tablet-width) {
+    width: 100%;
   }
 }
 
@@ -40,13 +51,26 @@
   text-align: left;
   font-size: 14px;
   line-height: 24px;
-}
 
-
-.photo__statistic {
   @media (min-width: @tablet-width) {
     display: flex;
+    flex-direction: row;
+    background-color: @form-background;
+    height: 80px;
     width: 100%;
-    min-height: 80px;
+  }
+
+  @media (min-width: @desktop-width) {
+    color: @base-color;
+  }
+}
+
+.photo__stat {
+  display: flex;
+
+  @media (min-width: @tablet-width) {
+    justify-content: flex-end;
+    max-width: 100px;
+    text-align: center;
   }
 }
