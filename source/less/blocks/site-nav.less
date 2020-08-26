@@ -1,0 +1,51 @@
+.site-nav__toggle {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 17px;
+  right: 20px;
+  border-style: none;
+  outline: none;
+  cursor: pointer;
+  background-color: inherit;
+
+  &::before {
+    content: "";
+    background-image: url("../img/icon-menu.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .site-nav--opened .site-nav__toggle&::before {
+    content: "";
+    background-image: url("../img/icon-cross.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 17px;
+    right: 20px;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.site-nav {
+  position: relative;
+  display: flex;
+  width: 100%;
+  min-height: 168px;
+  background-color: @block-color;
+
+  @media (min-width: @tablet-width) {
+    min-height: 56px;
+    background-color: @base-color;
+  }
+}
