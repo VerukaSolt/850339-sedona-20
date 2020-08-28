@@ -1,7 +1,22 @@
+.page-header {
+  display: flex;
+  padding-bottom: 30px;
+}
+
 .page-header__logo {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   width: 102px;
   z-index: 10;
+  margin-top: 220px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 102px;
+    z-index: 10;
+    margin-top: 0;
+  }
 }

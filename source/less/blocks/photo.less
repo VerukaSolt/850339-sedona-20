@@ -25,15 +25,20 @@
   height: 21px;
   border-style: none;
   cursor: pointer;
+  background-color: transparent;
 }
 
 .photo {
   padding-top: 22px;
   border-top: 1px solid @form-hover-background;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: @tablet-width) {
     border-top: none;
     width: 50%;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   @media (min-width: @desktop-width) {

@@ -1,36 +1,51 @@
 .site-nav__toggle {
   position: absolute;
+  display: block;
   width: 24px;
   height: 24px;
-  top: 17px;
-  right: 20px;
   border-style: none;
   outline: none;
   cursor: pointer;
-  background-color: inherit;
+  z-index: 2;
+  background: transparent;
 
-  &::before {
-    content: "";
-    background-image: url("../img/icon-menu.svg");
-    background-repeat: no-repeat;
-    position: absolute;
-    width: 23px;
-    height: 23px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  @media (min-width: @tablet-width) {
+    display: none;
   }
+}
 
-  .site-nav--opened .site-nav__toggle&::before {
-    content: "";
-    background-image: url("../img/icon-cross.svg");
-    background-repeat: no-repeat;
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    top: 17px;
-    right: 20px;
-  }
+.site-nav--opened .site-nav__toggle {
+  top: 17px;
+  right: 20px;
+}
+
+.site-nav--closed .site-nav__toggle {
+  bottom: -30px;
+  right: 20px;
+}
+
+.site-nav--opened .site-nav__toggle&::before {
+  content: "";
+  background-image: url("../img/icon-cross.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.site-nav--closed .site-nav__toggle&::before {
+  content: "";
+  background-image: url("../img/icon-menu.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
   @media (min-width: @tablet-width) {
     display: none;
