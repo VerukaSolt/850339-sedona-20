@@ -7,12 +7,93 @@
   text-transform: none;
 }
 
+.photo__wrapper {
+  width: 280px;
+  height: 280px;
+}
+
+.photo__img {
+  width: 100%;
+}
+
 .photo__appereciate-button {
   display: flex;
   content: "";
   background-image: url("../img/icon-like.svg");
   background-repeat: no-repeat;
-  min-width: 23px;
-  min-height: 21px;
+  width: 23px;
+  height: 21px;
   border-style: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.photo {
+  padding-top: 22px;
+  border-top: 1px solid @form-hover-background;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    border-top: none;
+    width: 50%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 33.33%;
+    position: relative;
+  }
+}
+
+.photo--sunset {
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    position: relative;
+  }
+}
+
+.photo__text {
+  display: block;
+  text-align: left;
+  font-size: 14px;
+  line-height: 24px;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    position: relative;
+    margin-top: -15px;
+    background-color: @form-background;
+    height: 80px;
+    width: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    color: @base-color;
+    position: absolute;
+    background-color: @desktop-photo-text-background;
+    bottom: -8px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.photo__stat {
+  display: flex;
+
+  @media (min-width: @tablet-width) {
+    max-width: 100px;
+    position: absolute;
+    top: 40%;
+    right: 10%;
+  }
+}
+
+.photo__about {
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin-top: 15px;
+    margin-left: 20px;
+  }
 }

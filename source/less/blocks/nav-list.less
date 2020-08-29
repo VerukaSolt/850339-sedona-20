@@ -1,13 +1,35 @@
 .nav-list {
   .clear-list();
+  display: block;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    position: relative;
+    width: 100%;
+  }
 }
 
 .nav-list__item {
+  display: flex;
   background-color: @block-color;
   font-size: 18px;
   font-weight: 700;
+  height: 53px;
+  text-align: center;
+  justify-content: center;
+  border-top: 1px solid @nav-mobile-top-border;
+  border-bottom: 1px solid @nav-mobile-bot-border;
+
+  @media (min-width: @tablet-width) {
+    border-style: none;
+  }
 
   a {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 100%;
     color: @base-color;
 
     &:hover {
@@ -17,6 +39,55 @@
     &:active {
       background-color: @active-color;
       color: @active-text-opacity;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 20%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    line-height: 26px;
+    text-align: center;
+    box-sizing: border-box;
+    font-weight: 700;
+    background-color: @base-color;
+
+    a {
+      color: @main-font-color;
+
+      &:hover {
+        background-color: @base-color;
+        color: @block-color;
+      }
+
+      &:active {
+        color: @form-background;
+      }
+    }
+  }
+}
+
+.nav-list li:nth-child(2) {
+  margin-right: auto;
+}
+
+.nav-list__item:nth-last-child(1) {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 20px;
+    background: @nav-mobile-gradient;
+
+    @media (min-width: @tablet-width) {
+      display: none;
     }
   }
 }

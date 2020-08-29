@@ -2,10 +2,21 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
 
-  img {
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 100%;
+    display: flex;
     text-align: center;
     justify-content: center;
+    margin-top: -23px;
+  }
+
+  img {
     margin-top: 90px;
     margin-bottom: 85px;
   }

@@ -1,0 +1,89 @@
+.sight {
+  display: flex;
+  position: relative;
+  text-align: center;
+
+  &::before {
+    content: "";
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 20%;
+    right: 80%;
+    transform: translate(-30%, -20%);
+
+    @media (min-width: @tablet-width) {
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+  }
+
+  &--housing::before {
+    width: 39px;
+    height: 38px;
+    background-image: url("../img/icon-house.svg");
+    background-size: contain;
+
+    @media (min-width: @tablet-width) {
+      width: 75px;
+      height: 72px;
+    }
+  }
+
+  &--food::before {
+    width: 40px;
+    height: 35px;
+    background-image: url("../img/icon-burger.svg");
+    background-size: contain;
+
+    @media (min-width: @tablet-width) {
+      width: 76px;
+      height: 69px;
+    }
+  }
+
+  &--souvenir::before {
+    width: 32px;
+    height: 38px;
+    background-image: url("../img/icon-gift.svg");
+    background-size: contain;
+
+    @media (min-width: @tablet-width) {
+      width: 63px;
+      height: 75px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    position: relative;
+    width: 33.33%;
+    min-height: 256px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+.sight__description {
+  padding-bottom: 40px;
+}
+
+.sight__text {
+  display: block;
+  max-width: 240px;
+  text-align: left;
+  padding-left: 69px;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    max-width: 193px;
+    margin: 0 auto;
+    text-align: center;
+    padding-left: 0;
+    padding-top: 100px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 313px;
+  }
+}
